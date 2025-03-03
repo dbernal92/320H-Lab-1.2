@@ -1,21 +1,23 @@
-function Nav() {
-
-    return (
-        <nav className="mt-5" onClick={() => alert("clicked")} style={styles}>
-
-            <a href="#">Women's</a>
-            <a href="#">Men's</a>
-            <a href="#">On the Street</a>
-            <a href="#">The Catwalk</a>
-            <a href="#">AdWatch</a>
-            <a href="#">About</a>
-        </nav>
-    );
-}
-
 const styles = {
     display: "flex",
-    justifyContent: "space-around"
+    alignItems: "center"
+};
+
+const linkStyles = {
+    margin: "0 15px", // Adds spacing between links
+};
+
+function Nav() {
+    return (
+        <nav style={styles}>
+            <a href="#" style={linkStyles}>Women's</a>
+            <a href="#" style={linkStyles}>Men's</a>
+            <a href="#" style={linkStyles}>On the Street</a>
+            <a href="#" style={linkStyles}>The Catwalk</a>
+            <a href="#" style={linkStyles}>AdWatch</a>
+            <a href="#" style={linkStyles}>About</a>
+        </nav>
+    );
 }
 
 export default Nav;

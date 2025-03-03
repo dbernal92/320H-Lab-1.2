@@ -9,10 +9,5 @@ function Footer() {
       </footer>
     );
   }
-  
-  const styles = {
-    display: "flex",
-    justifyContent: "space-around"
-}
 
   export default Footer;
